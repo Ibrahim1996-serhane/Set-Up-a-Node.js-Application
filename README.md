@@ -38,8 +38,8 @@
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
     }
-...
-}  
+    ...
+    }  
 ### sudo nginx -t
 ### sudo systemctl restart nginx
 ### --------------------
