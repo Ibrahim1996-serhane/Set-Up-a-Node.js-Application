@@ -41,7 +41,7 @@ location /app2 {
         proxy_cache_bypass $http_upgrade;
     }
 ...
-}   
+}  <br/> 
 ### sudo nginx -t
 ### sudo systemctl restart nginx
 ### --------------------
