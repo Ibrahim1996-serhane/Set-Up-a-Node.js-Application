@@ -4,7 +4,8 @@
 ## Step 1 — Installing Node.js
 
 ### cd ~
-### curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+### curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+### sudo apt -y install nodejs
 ### sudo bash nodesource_setup.sh
 ### sudo apt install nodejs
 ### nodejs -v
@@ -30,17 +31,18 @@
 ### sudo nano /etc/nginx/sites-available/example.com
 ### "/etc/nginx/sites-available/example.com"
 ###  server {
-...
-    location / {
-        proxy_pass http://localhost:3000;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
-...
-}
-
+### ...
+###   location / {
+###        proxy_pass http://localhost:3000;
+###        proxy_http_version 1.1;
+###        proxy_set_header Upgrade $http_upgrade;
+###        proxy_set_header Connection 'upgrade';
+###        proxy_set_header Host $host;
+###       proxy_cache_bypass $http_upgrade;
+###    }
+### ...
+### }
+### sudo nginx -t
+### sudo systemctl restart nginx
 
 
