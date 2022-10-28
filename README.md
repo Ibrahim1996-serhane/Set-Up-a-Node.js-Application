@@ -1,7 +1,7 @@
 # Set-Up-a-Node.js-Application
 
 
-Titles and internal titles
-Introduction - the project's aim
-Technologies
-Launch
+## Step 1 — Installing Node.js
+### cd ~
+### curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
+
