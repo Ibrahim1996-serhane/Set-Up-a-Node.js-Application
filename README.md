@@ -30,8 +30,7 @@
 
 ### sudo nano /etc/nginx/sites-available/example.com
 ### "/etc/nginx/sites-available/example.com"
-###  <pre> server {
-  ...
+###  <pre> server { <br/> ...
     location / {
          proxy_pass http://localhost:3000;
          proxy_http_version 1.1;
