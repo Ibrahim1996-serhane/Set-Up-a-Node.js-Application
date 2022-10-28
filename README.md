@@ -22,9 +22,11 @@
 ### sudo systemctl start pm2-ibrahim
 ### systemctl status pm2-ibrahim
 ### pm2 stop app_name_or_id
+### pm2 stop all
 ### pm2 restart app_name_or_id
 ### pm2 info app_name
 ### pm2 monit
+### pm2 log
 
 ## Step 3 — Setting Up Nginx as a Reverse Proxy Server
 
