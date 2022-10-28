@@ -30,7 +30,8 @@
 
 ### sudo nano /etc/nginx/sites-available/example.com
 ### "/etc/nginx/sites-available/example.com"
-###  <br/> 
+### 
+<br/> 
 server {  ...
     location / {
          proxy_pass http://localhost:3000;
@@ -42,8 +43,8 @@ server {  ...
      }
  ...
   } 
-  
-###  <br/>  
+ <br/>
+###    
 ### sudo nginx -t
 ### sudo systemctl restart nginx
 
